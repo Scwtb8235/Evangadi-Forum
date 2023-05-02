@@ -93,7 +93,7 @@ module.exports = {
     userById(req.id, (err, results) => {
       if (err) {
         console.log(err);
-        return res.status(500).json({ msg: "database connection err" });
+        return res.status(500).json({ msg: "database connection err" }); 
       }
       if (!results) {
         return res.status(404).json({ msg: "Record not found" });
